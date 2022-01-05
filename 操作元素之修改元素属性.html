@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="dmm">杜美美</button>
+    <button id="mmd">美美杜</button>
+    <br>
+    <img src="images/杜美美.JPG" title="杜美美">
+    <script>
+        //1、获取元素
+        var dmm = document.getElementById('dmm');
+        var mmd = document.getElementById('mmd');
+        var img = document.querySelector('img');
+        //2、注册事件 处理程序
+        dmm.onclick = function() {
+            img.src = 'images/杜美美.JPG'
+            img.title = '杜美美'
+        }
+        mmd.onclick = function() {
+            img.src = 'images/美美杜.JPG'
+            img.title = '美美杜'
+        }
+    </script>
+</body>
+
+</html>
