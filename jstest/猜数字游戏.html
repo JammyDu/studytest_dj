@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //猜数字游戏
+        //随机生成一个1-10的整数，需要用到 Math.random()的方法
+        //需要一直猜到正确为止，一直循环 while
+        //核心算法 使用 if else if 多分支语句来判断大于 小于 等于
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var random = getRandom(1, 10);
+        while (true) {
+            var num = prompt('你来猜？输入1-10之间的一个数字');
+            if (num > random) {
+                alert('大了');
+            } else if (num < random) {
+                alert('小了')
+
+            } else {
+                alert('对了')
+                break;
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
