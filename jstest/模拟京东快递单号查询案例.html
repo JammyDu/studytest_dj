@@ -59,10 +59,9 @@
             }
             //当失去焦点，就隐藏这个从盒子
             jd_input.addEventListener('blur', function() {
-                con.style.display = 'none';
-            })
-
-            //当我们获得焦点，就显示这个con盒子
+                    con.style.display = 'none';
+                })
+                //当我们获得焦点，就显示这个con盒子
             jd_input.addEventListener('focus', function() {
                 if (this.value !== '') {
                     con.style.display = 'block';
